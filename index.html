@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./bootstrap.min.css"> delete when deploying -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- <script src="./bootstrap.min.js"></script> delete when deploying -->
+    <script src="java.js" defer></script>
+
+    
+    <title>EARTLINK | HOME</title>
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <div class="company">
+                <div class="company-logo"><img src="./media/icons/company-logo.png" alt="company logo"></div>
+                <div class="company-name">
+                    <h1>EARTLINK</h1>
+                </div>
+            </div>
+            <div class="nav-container">
+                <nav>
+                    <ul>
+                        <li class="nav-item"><a href="#">HOME</a></li>
+                        <li class="nav-item"><a href="#about-us">ABOUT US</a></li>
+                        <li class="nav-item"><a href="#main-course">COURSE</a></li>
+                        <li class="nav-item"><a href="#faqs">Faqs</a></li>
+                        <button type="button" class="nav-btn hero-btn btn btn-outline-primary">Register</button>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-bar">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="hero-content container">
+                <p>At EartLink Training Institute, we provide hands-on training and real-world experience to help you excel in the dynamic tech industry. Discover your potential and shape your future with us.</p>
+                <button type="button" class="hero-btn btn btn-outline-primary">Register</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="about-us container" id="about-us">
+            <div class="company-info">
+                <h3 class="company-info-title">EARTLINK TRAINING INSTITUTE</h3>
+                <p class="company-info-details">
+                    At EARTLINK Training Institute, we are dedicated to providing top-tier education in the tech industry. Our expert instructors, hands-on learning approach, and career support services ensure that you gain the skills and knowledge needed to excel. Join us and transform your passion into a successful career.
+                </p>     
+            </div>
+
+            <div class="company-img-rep">
+                <h3>What we Stand For</h3>
+                <div class="graphic-rep">
+                    <div class="graphic-rep-item center">Innovation</div>
+                    <div class="graphic-rep-item top-right">Excellence</div>
+                    <div class="graphic-rep-item top-left">Integrity</div>
+                    <div class="graphic-rep-item bottom-right">Commitment</div>
+                    <div class="graphic-rep-item bottom-left">Collaboration</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="courses container">
+            <h3>Explore our main courses</h3>
+            <div class="main-course-container" id="main-course">
+                <div class="main-course-grouping cyber-security">
+                    <div class="course-icon-container cyber-security">
+                        <img src="./media/icons/cyber-security.png" alt="" class="course-icon">
+                    </div>
+                    <p class="course-title">Cyber Security</p>
+                    <p class="course-details">Start your journey to mastering the core principles of safeguarding digital systems and combating cyber threats.</p>
+                    <a href="#" class="learn-more">Learn More <span class="arrow-right">&rarr;</span></a>                    
+                </div>
+                <div class="main-course-grouping devops">
+                    <div class="course-icon-container devops">
+                        <img src="./media/icons/devops.png" alt="" class="course-icon">
+                    </div>
+                    <p class="course-title">DevOps</p>
+                    <p class="course-details">Join us to master the fundamental principles that merge development and operations, fostering efficiency and innovation in today's tech landscape.</p>
+                    <a href="#" class="learn-more">Learn More <span class="arrow-right">&rarr;</span></a>                    
+                </div>
+                <div class="main-course-grouping ml">
+                    <div class="course-icon-container ml">
+                        <img src="./media/icons/ml.png" alt="" class="course-icon">
+                    </div>
+                    <p class="course-title">Machine Learning</p>
+                    <p class="course-details">Discover the driving forces behind innovation, empowering you to craft intelligent systems and predictive models.</p>
+                    <a href="#" class="learn-more">Learn More <span class="arrow-right">&rarr;</span></a>                    
+                </div>
+                <div class="main-course-grouping">
+                    <div class="course-icon-container cisco">
+                        <img src="./media/icons/cisco.png" alt="" class="course-icon">
+                    </div>
+                    <p class="course-title">CISCO Networking</p>
+                    <p class="course-details">Gain insights into network architecture, protocols, security measures, and more, empowering you to design, implement, and optimize robust network solutions using Cisco technologies.</p>
+                    <a href="#" class="learn-more">Learn More <span class="arrow-right">&rarr;</span></a>                    
+                </div>
+                <div class="main-course-grouping">
+                    <div class="course-icon-container ui-ux">
+                        <img src="./media/icons/ui-ux.png" alt="" class="course-icon">
+                    </div>
+                    <p class="course-title">UI/UX Design</p>
+                    <p class="course-details">Acquire the skills to create intuitive, visually captivating, and user-centered digital experiences, enabling mastery in UI/UX design</p>
+                    <a href="#" class="learn-more">Learn More <span class="arrow-right">&rarr;</span></a>
+                </div>
+                <div class="main-course-grouping">
+                    <div class="course-icon-container webdev">
+                        <img src="./media/icons/webdev.png" alt="" class="course-icon">
+                    </div>
+                    <p class="course-title">Web Development</p>
+                    <p class="course-details">Web development involves crafting websites and applications for online usage. Our courses cover fundamental skills in both, enabling you to design user-friendly, responsive digital platforms.</p>
+                    <a href="#" class="learn-more">Learn More <span class="arrow-right">&rarr;</span></a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="specialized-course container carousel slide" id="specialized-course" data-bs-ride="false" data-bs-interval="false">
+            <h3>Specialized Course</h3>
+            <i class="fa-solid fa-angle-left" data-bs-target="#specialized-course" data-bs-slide="prev"></i>
+            <div class="specialized-course-container carousel-inner">
+                <div class="course-class carousel-item active">
+                    <p class="course-class-title">Library Management</p>
+                    <div class="course-class-content">
+                        <div class="course-content-box">
+                            <img src="./media/icons/koha-logo.png" alt="" class="course-logo">
+                            <p>Click to learn more</p>
+                        </div>
+                        <div class="course-content-box">
+                            <img src="./media/icons/dspace_logo.wine.png" alt="" class="course-logo">
+                            <p>Click to learn more</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-class carousel-item">
+                    <p class="course-class-title">Content Management</p>
+                    <div class="course-class-content">
+                        <div class="course-content-box">
+                            <img src="./media/icons/Joomla-Logo.wine.png" alt="" class="course-logo">
+                            <p>Click to learn more</p>
+                        </div>
+                        <div class="course-content-box">
+                            <img src="./media/icons/Drupal-Logo.wine.png" alt="" class="course-logo">
+                            <p>Click to learn more</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-class carousel-item">
+                    <p class="course-class-title">Web Management</p>
+                    <div class="course-class-content">
+                        <div class="course-content-box">
+                            <img src="./media/icons/WordPress-Logo.png" alt="" class="course-logo">
+                            <p>Click to learn more</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-class carousel-item">
+                    <p class="course-class-title">E Library</p>
+                    <div class="course-class-content">
+                        <div class="course-content-box">
+                            <img src="./media/icons/Moodle-Logo.wine.png" alt="" class="course-logo">
+                            <p>Click to learn more</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <i class="fa-solid fa-angle-right" data-bs-target="#specialized-course" data-bs-slide="next"></i>
+        </section>
+           
+        <section class="testimonial container">
+            <h3>Testimonial</h3>
+            <div class="slide-show-container">
+                <div id="testimonial-slide-1" class="slide-show-box carousel slide display" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" class="active round-indicator" data-bs-target="#testimonial-slide-1" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" class="round-indicator" data-bs-target="#testimonial-slide-1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" class="round-indicator" data-bs-target="#testimonial-slide-1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div> 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-slide-1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonial-slide-1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button> 
+                    <div class="carousel-inner slide-show-content">               
+                        <div class="slide-show carousel-item active">
+                            <img src="./media/images/apwen1.JPG" alt="">
+                        </div>
+                        <div class="slide-show carousel-item">
+                            <img src="./media/images/apwen2.JPG" alt="">
+                        </div>
+                        <div class="slide-show carousel-item">
+                            <img src="./media/images/apwen3.JPG" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="testimonial-slide-2" class="slide-show-box carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" class="active round-indicator" data-bs-target="#testimonial-slide-2" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" class="round-indicator" data-bs-target="#testimonial-slide-2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" class="round-indicator" data-bs-target="#testimonial-slide-2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div> 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-slide-2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonial-slide-2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button> 
+                    <div class="carousel-inner slide-show-content">               
+                        <div class="slide-show carousel-item active">
+                            <img src="./media/images/cisco-training1.jpg" alt="">
+                        </div>
+                        <div class="slide-show carousel-item">
+                            <img src="./media/images/cisco-training2.jpg" alt="">
+                        </div>
+                        <div class="slide-show carousel-item">
+                            <img src="./media/images/cisco-training3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="testimonial-slide-3" class="slide-show-box carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" class="active round-indicator" data-bs-target="#testimonial-slide-3" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" class="round-indicator" data-bs-target="#testimonial-slide-3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" class="round-indicator" data-bs-target="#testimonial-slide-3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div> 
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-slide-3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonial-slide-3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button> 
+                    <div class="carousel-inner slide-show-content">               
+                        <div class="slide-show carousel-item active">
+                            <img src="./media/images/girls-training1.jpg" alt="">
+                        </div>
+                        <div class="slide-show carousel-item">
+                            <img src="./media/images/girls-training2.jpg" alt="">
+                        </div>
+                        <div class="slide-show carousel-item">
+                            <img src="./media/images/girls-training6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <p class="slide-caption"></p>
+            </div>
+            <div class="gallary-container">
+                <div id="slide-1" class="gallary active">
+                    <img src="./media/images/apwen1.JPG" alt="">
+                    <p>APWEN TRAINING</p>
+                </div>
+                <div id="slide-2" class="gallary">
+                    <img src="./media/images/cisco-training1.jpg" alt="">
+                    <p>CISCO NETWORKING</p>
+                </div>
+                <div id="slide-3" class="gallary">
+                    <img src="./media/images/girls-training1.jpg" alt="">
+                    <p>GIRLS EMPOWERMENT (Platue)</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="ceo-partner container">
+            <div class="partner-box">
+                <img src="./media/images/partners.png" alt="" class="partner-pic">
+                <div class="partner-text">
+                    <h3 class="partner-title">Come Partner With Us</h3>
+                    <p class="partner-detail">Funders, Corporates, Placement Organisations & others looking to be part of the Programme</p>
+                    <p class="partner-btn">Partner With Us <img src="./media/icons/ext-link.png" alt="" class="link-symbol"> </p>
+                </div>
+            </div>
+            <div class="ceo">
+                <h3>A Message from our Founder</h3>
+                <p class="ceo-message">Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore itaque expedita odit ipsam ratione? Nesciunt totam qui voluptatibus eos, enim minus. Debitis incidunt recusandae aut dicta fugiat ad odit?
+                Eaque error maxime, eos iure, dolore reprehenderit recusandae aliquam mollitia facilis quidem minima itaque voluptate assumenda labore quos quibusdam sapiente impedit. Cum mollitia nihil, quas quam ratione numquam! Harum, magnam.</p>
+                <div class="ceo-profile">
+                    <img src="./media/images/ceo.png" alt="" class="ceo-img">
+                    <div class="about-group">
+                        <p class="ceo-name">Jonathan Gondyl Daniel</p>
+                        <p class="ceo-about">Founder, EarthLink Institute</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="container faq" id="faqs">
+            <h3>FAQs</h3>
+            <div class="accordion accordion-flush faq-container" id="faq-container">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq-header-1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-body-1" aria-expanded="false" aria-controls="faq-body-1">
+                            How can I register for a course?
+                        </button>
+                    </h2>
+                    <div id="faq-body-1" class="accordion-collapse collapse" aria-labelledby="faq-header-1" data-bs-parent="#faq-container">
+                        <div class="accordion-body">
+                            <b>To register for a course at Eartlink Training Institute, follow these steps:</b>
+                            <ol>
+                                <li>Visit our website and navigate to the "Courses" section.</li>
+                                <li>Select the course you are interested in.</li>
+                                <li>Click on the "Register" button.</li>
+                                <li>Fill out the registration form with your details.</li>
+                                <li>Complete the payment process to confirm your enrollment.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq-header-2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-body-2" aria-expanded="false" aria-controls="faq-body-2">
+                            What are the prerequisites for enrolling in a course?
+                        </button>
+                    </h2>
+                    <div id="faq-body-2" class="accordion-collapse collapse" aria-labelledby="faq-header-2" data-bs-parent="#faq-container">
+                        <div class="accordion-body">
+                            <b>The prerequisites for enrolling in a course at Eartlink Training Institute vary depending on the course. Generally:</b>
+                            <ul>
+                                <li>For beginner courses, no prior experience is required.</li>
+                                <li>Intermediate and advanced courses may require basic knowledge or experience in the relevant field.</li>
+                                <li>Specific prerequisites are listed on the course description page. Make sure to review them before registering.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq-header-3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-body-3" aria-expanded="false" aria-controls="faq-body-3">
+                            Are the courses offered online or in-person?
+                        </button>
+                    </h2>
+                    <div id="faq-body-3" class="accordion-collapse collapse" aria-labelledby="faq-header-3" data-bs-parent="#faq-container">
+                        <div class="accordion-body">Eartlink Training Institute offers both online and in-person courses to accommodate different learning preferences. You can choose the format that best suits your schedule and learning style. The mode of delivery for each course is specified in the course description.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq-header-4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-body-4" aria-expanded="false" aria-controls="faq-body-4">
+                            What kind of support is available for students during their course?
+                        </button>
+                    </h2>
+                    <div id="faq-body-4" class="accordion-collapse collapse" aria-labelledby="faq-header-4" data-bs-parent="#faq-container">
+                        <div class="accordion-body">
+                            <b>We provide comprehensive support for our students, including:</b>
+                            <ul>
+                                <li>Access to course materials and resources.</li>
+                                <li>Regular Q&A sessions with instructors.</li>
+                                <li>Discussion forums to interact with peers.</li>
+                                <li>Technical support for any issues related to course access or materials.</li>
+                                <li>Career counseling and job placement assistance upon course completion.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq-header-5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-body-5" aria-expanded="false" aria-controls="faq-body-5">
+                            Can I get a refund if I am not satisfied with a course?
+                        </button>
+                    </h2>
+                    <div id="faq-body-5" class="accordion-collapse collapse" aria-labelledby="faq-header-5" data-bs-parent="#faq-container">
+                        <div class="accordion-body">Yes, Eartlink Training Institute offers a satisfaction guarantee. If you are not satisfied with a course, you can request a refund within the first 14 days of enrollment. Please refer to our refund policy on the website for more details on the process and conditions.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq-header-6">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-body-6" aria-expanded="false" aria-controls="faq-body-6">
+                           Question #6
+                        </button>
+                    </h2>
+                    <div id="faq-body-6" class="accordion-collapse collapse" aria-labelledby="faq-header-6" data-bs-parent="#faq-container">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus voluptates quaerat ea maxime repellendus odit porro. Placeat molestiae, iste, nam cum saepe quibusdam modi, suscipit minus officia obcaecati ducimus quam.</div>
+                    </div>
+                </div>
+            </div>
+            <button id="viewMoreBtn" type="button" class="view-more btn btn-link">view more</button>
+            <button id="viewLessBtn" class="view-less btn btn-link" style="display: none;">view less</button>
+        </section>
+        
+        <!-- Other sections here -->
+
+    </main>
+    <footer>
+        <div class="footer-info">
+            <div>
+                <div class="company-name">
+                    <h3>EARTLINK</h3>
+                </div>
+                <div class="news-letter">
+                    <p>Subscribe to our newsletter</p>
+                    <form action="" class="news-letter-form">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <input type="submit" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+            <div class="all-course">
+                <h4>Our Products</h4>
+                <ul>
+                    <li><a href="">CyberSecurity</a></li>
+                    <li><a href="">Machine Learning</a></li>
+                    <li><a href="">Cisco Networking</a></li>
+                    <li><a href="">DevOps</a></li>
+                    <li><a href="">UI/UX Design</a></li>
+                    <li><a href="">Web Development</a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h4>Contacts</h4>
+                <div class="telephone">
+                    <i class="bi bi-telephone"> <a href="tel:+235674323">+234-4564-564-32</a></i>
+                    <i class="bi bi-envelope"> <a href="mailto:eartlink@gmail.com">eartlnk@email.com</a></i>
+                </div>
+                <div class="social-icons">
+                    <a href="">
+                    <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="">
+                    <i class="bi bi-twitter-x"></i>
+                    </a>
+                    <a href="">
+                    <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copy-write">
+            <p>&copy; 2024 EARTLINK. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
